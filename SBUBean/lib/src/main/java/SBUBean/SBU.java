@@ -1,9 +1,12 @@
 package SBUBean;
 
+import java.util.List;
+
 public class SBU {
 	private String sbuId;
 	private String sbuName;
 	private String sbuHead;
+	private List<Employee> empDetails;
 	
 	SBU(){}
 
@@ -12,6 +15,24 @@ public class SBU {
 		this.sbuId = sbuId;
 		this.sbuName = sbuName;
 		this.sbuHead = sbuHead;
+	}
+	
+
+	public SBU(String sbuId, String sbuName, String sbuHead, List<Employee> empDetails) {
+		super();
+		this.sbuId = sbuId;
+		this.sbuName = sbuName;
+		this.sbuHead = sbuHead;
+		this.empDetails = empDetails;
+	}
+
+	
+	public List<Employee> getEmpDetails() {
+		return empDetails;
+	}
+
+	public void setEmpDetails(List<Employee> empDetails) {
+		this.empDetails = empDetails;
 	}
 
 	public String getSbuId() {
@@ -40,8 +61,11 @@ public class SBU {
 
 	@Override
 	public String toString() {
-		return "SBU [sbuId=" + sbuId + ", sbuName=" + sbuName + ", sbuHead=" + sbuHead + "]";
+		return "SBU [sbuId=" + sbuId + ", sbuName=" + sbuName + ", sbuHead=" + sbuHead + ", empDetails=" + empDetails
+				+ "]";
 	}
+
+	
 	
 
 }

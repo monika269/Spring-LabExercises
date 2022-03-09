@@ -5,18 +5,20 @@ public class Employee {
 	private String name;
 	private int age;
 	private double salary;
-	private SBU sbu;
 	
 	Employee(){}
 
-	public Employee(int id, String name, int age, double salary, SBU sbu) {
+	
+
+	public Employee(int id, String name, int age, double salary) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.age = age;
 		this.salary = salary;
-		this.sbu = sbu;
 	}
+
+
 
 	public int getId() {
 		return id;
@@ -50,18 +52,16 @@ public class Employee {
 		this.salary = salary;
 	}
 
-	public SBU getSbu() {
-		return sbu;
-	}
 
-	public void setSbu(SBU sbu) {
-		this.sbu = sbu;
-	}
 
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", age=" + age + ", salary=" + salary + ", sbu=" + sbu + "]";
+		return "Employee [id=" + id + ", name=" + name + ", age=" + age + ", salary=" + salary + "]";
 	}
+
+
+
+	
 	
 	
 	

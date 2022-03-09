@@ -12,9 +12,9 @@ public class Test {
 		Resource resource=new ClassPathResource("sbuBean.xml");
 		BeanFactory factory=new XmlBeanFactory(resource);
 		
-		Employee emp1 = (Employee)factory.getBean("emp1");
+		SBU sbu1 = (SBU)factory.getBean("sbu1");
 		
-		System.out.println(emp1);
+		System.out.println(sbu1);
 
 	}
 

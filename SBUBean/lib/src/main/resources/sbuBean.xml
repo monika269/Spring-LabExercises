@@ -11,7 +11,14 @@
    <constructor-arg value="Harriet"></constructor-arg>
    <constructor-arg value="40000.0" type="double"></constructor-arg>
    <constructor-arg value="30" type="int"></constructor-arg>
-   <constructor-arg ref="sbu1"></constructor-arg>
+   
+</bean>
+
+<bean id="emp2" class="SBUBean.Employee">
+   <constructor-arg value="12346" type="int"></constructor-arg>
+   <constructor-arg value="Harry"></constructor-arg>
+   <constructor-arg value="60000.0" type="double"></constructor-arg>
+   <constructor-arg value="32" type="int"></constructor-arg>
    
 </bean>
 
@@ -19,6 +26,12 @@
    <constructor-arg value="PES-BU"></constructor-arg>
    <constructor-arg value="Kiran Rao"></constructor-arg>
    <constructor-arg value="Product Engineering Services"></constructor-arg>
+   <constructor-arg>
+   <list>
+   	<ref bean="emp1"/>
+   	<ref bean="emp2"/>
+   </list>
+   </constructor-arg>
    
 </bean>
 
