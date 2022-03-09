@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+                
+<bean id="emp1" class="SpringApplication.Employee">  
+   <constructor-arg index="0" value="1004" type="int"></constructor-arg>
+   <constructor-arg index="1" value="Kavitha"></constructor-arg>
+   <constructor-arg index="2" value="40000.0"></constructor-arg>
+</bean>  
+
+<bean id="emp2" class="SpringApplication.Employee">  
+   <constructor-arg index="0" value="1005" type="int"></constructor-arg>
+   <constructor-arg index="1" value="Jay"></constructor-arg>
+   <constructor-arg index="2" value="60000.0"></constructor-arg>
+</bean>               
+
+<bean id="emp3" class="SpringApplication.Employee">  
+   <constructor-arg index="0" value="1006" type="int"></constructor-arg>
+   <constructor-arg index="1" value="Ram"></constructor-arg>
+   <constructor-arg index="2" value="70000.0"></constructor-arg>
+</bean>
+
+
+ 
+</beans> 
